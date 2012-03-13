@@ -1,4 +1,4 @@
-Source: openstack-common
+Source: python-openstack-common
 Section: python
 Priority: extra
 Maintainer: RCB Builder <rcb-deploy@lists.rackspace.com>
