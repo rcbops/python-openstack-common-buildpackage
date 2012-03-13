@@ -1,0 +1,5 @@
+openstack-common for Debian
+---------------------------
+
+This package doesnt contain a debian/watch file so you have to use fakeroot debian/rules get-orig-source 
+for a new source.

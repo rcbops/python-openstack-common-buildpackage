@@ -1,0 +1,16 @@
+Source: openstack-common
+Section: python
+Priority: extra
+Maintainer: RCB Builder <rcb-deploy@lists.rackspace.com>
+XCBS-Original-Maintainer: Chuck Short <zulcss@ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), python, python-setuptools, python-greenlet, python-eventlet, python-pastedeploy,
+ python-routes, python-webob, python-lxml
+Standards-Version: 3.9.2
+Homepage: https://github.com/jkoelker/openstack-common
+XCBS-RCB-Component: essex-e3
+
+Package: python-openstack-common
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Description: Common code for Openstack Projects.
+ This packagage contains common code needed for Openstack Projects.

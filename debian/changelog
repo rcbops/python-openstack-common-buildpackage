@@ -1,0 +1,19 @@
+python-openstack-common (2012.0+e3-rcb1) precise; urgency=low
+
+  * respin existing ubuntu packaging from
+    https://github.com/openstack/openstack-common, revision
+    96e8e38ed9c8ed03b5c0e95055b39d5759ed6b9d
+
+ -- RCB Builder <rcb-deploy@lists.rackspace.com>  Tue, 13 Mar 2012 15:07:15 -0700
+
+openstack-common (0.1+git20111130-0ubuntu2) precise; urgency=low
+
+  * debian/patches/drop-python-depends.patch.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Mon, 05 Dec 2011 13:10:23 -0500
+
+openstack-common (0.1+git20111130-0ubuntu1) precise; urgency=low
+
+  * Initial release.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Wed, 30 Nov 2011 13:40:02 -0500

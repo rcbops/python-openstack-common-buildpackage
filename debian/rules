@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@  --with python2
+
+UPSTREAM_GIT=git://github.com/jkoelker/openstack-common.git
+DEBIAN_VERSION=$(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p')
+DEBIAN_NAME=openstack-common
+
+get-orig-source:
+	git clone $(UPSTREAM_GIT) $(DEBIAN_NAME)
+	cd $(DEBIAN_NAME) ; \
+		git archive master --format=tar.gz \
+			--output=$(DEBIAN_NAME)_$(DEBIAN_VERSION).orig.tar.gz \
+			--prefix=$(DEBIAN_NAME)-$(DEBIAN_VERSION)/
+
