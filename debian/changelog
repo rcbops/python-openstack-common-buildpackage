@@ -1,3 +1,9 @@
+python-openstack-common (2012.0+e3-rcb2) precise; urgency=low
+
+  * reverted str_dict_replace function for melange
+
+ -- RCB Builder <rcb-deploy@lists.rackspace.com>  Tue, 13 Mar 2012 17:30:40 -0700
+
 python-openstack-common (2012.0+e3-rcb1) precise; urgency=low
 
   * respin existing ubuntu packaging from
